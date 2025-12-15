@@ -38,6 +38,12 @@ A systematic comparison was performed between **continuous** and **discrete** no
 - Discrete noise exhibits higher variance and poor selectivity
 - Energy histograms reveal distinct sampling behavior
 
+![Energy convergence](figures/noise_convergence.png)
+
+![Steady-state energy statistics](figures/steady_state_energy.png)
+
+![Energy distribution](figures/energy_histogram.png)
+
 These results demonstrate that **noise statistics alone strongly influence p-bit dynamics**, even with identical couplings.
 
 ---
@@ -48,6 +54,9 @@ The p-bit circuit is applied to the **MAXCUT problem** by mapping graph weights 
 
 J_ij = -w_ij
 
+![Ising energy during annealing](figures/maxcut_energy.png)
+
+![Cut improvement over time](figures/cut_trajectory.png)
 
 ### Experiments include:
 - Random weighted graphs
