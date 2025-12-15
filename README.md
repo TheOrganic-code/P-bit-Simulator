@@ -20,9 +20,8 @@ The entire framework is implemented from first principles in **PyTorch**, with a
 - Local fields computed dynamically
 - Energy-based formulation:
   
-  \[
-  E = -\frac{1}{2} \mathbf{m}^T J \mathbf{m} - \mathbf{h}^T \mathbf{m}
-  \]
+E = -0.5 * m^T J m - h^T m
+
 
 ---
 
@@ -47,9 +46,8 @@ These results demonstrate that **noise statistics alone strongly influence p-bit
 
 The p-bit circuit is applied to the **MAXCUT problem** by mapping graph weights to an Ising Hamiltonian:
 
-\[
-J_{ij} = -w_{ij}
-\]
+J_ij = -w_ij
+
 
 ### Experiments include:
 - Random weighted graphs
@@ -64,9 +62,7 @@ J_{ij} = -w_{ij}
 
 To transition from sampling to optimization, a linear annealing schedule is introduced:
 
-\[
-\beta(t): \beta_{\text{min}} \rightarrow \beta_{\text{max}}
-\]
+β(t): β_min → β_max
 
 ### Effects:
 - Early exploration of the energy landscape
